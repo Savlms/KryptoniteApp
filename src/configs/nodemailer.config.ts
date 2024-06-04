@@ -9,7 +9,7 @@ export default nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PASSWORD
+        user: process.env.NODEMAILER_USER,
+        pass: process.env.NODEMAILER_PASSWORD
     },
 });
